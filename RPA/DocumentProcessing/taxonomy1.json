@@ -1,0 +1,3173 @@
+﻿{
+  "DataContractVersion": "1.1",
+  "DocumentTypes": [
+    {
+      "DocumentTypeId": "AlfagommaGroup.AUS.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "AUS",
+      "Name": "Invoice_AUS",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.AUS.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.AUS.SalesOrder_AUS",
+      "Group": "Alfagomma Group",
+      "Category": "AUS",
+      "Name": "SalesOrder_AUS",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.AUS.SalesOrder_AUS.ReceiptAddress",
+          "FieldName": "Receipt Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.IND.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "IND",
+      "Name": "Invoice_IND",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.IND.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.IND.SalesOrder_IND",
+      "Group": "Alfagomma Group",
+      "Category": "IND",
+      "Name": "SalesOrder_IND",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.IND.SalesOrder_IND.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.MYS.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "MYS",
+      "Name": "Invoice_MYS",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.MYS.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.MYS.SalesOrder_MYS",
+      "Group": "Alfagomma Group",
+      "Category": "MYS",
+      "Name": "SalesOrder_MYS",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.MYS.SalesOrder_MYS.ReceiptAddress",
+          "FieldName": "Receipt Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.SGP.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "SGP",
+      "Name": "Invoice_SGP",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.SGP.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.SGP.SalesOrder_SGP",
+      "Group": "Alfagomma Group",
+      "Category": "SGP",
+      "Name": "SalesOrder_SGP",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.SGP.SalesOrder_SGP.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.THA.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "THA",
+      "Name": "Invoice_THA",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.THA.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.THA.SalesOrder_THA",
+      "Group": "Alfagomma Group",
+      "Category": "THA",
+      "Name": "SalesOrder_THA",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.THA.SalesOrder_THA.ReceiptAddress",
+          "FieldName": "Receipt Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.ZAR.Invoice",
+      "Group": "Alfagomma Group",
+      "Category": "ZAR",
+      "Name": "Invoice_ZAR",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.ZAR.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.Date",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#df7c60"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f7e222"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ec357a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.Name",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be98d2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d559f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2b266"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#877377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items",
+          "FieldName": "Invoice_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items.Item",
+              "FieldName": "Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items.ItemDescription",
+              "FieldName": "ItemDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.Invoice.Invoice_Items.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.ZAR.SalesOrder_ZAR",
+      "Group": "Alfagomma Group",
+      "Category": "ZAR",
+      "Name": "SalesOrder_ZAR",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.ReceiptNumber",
+          "FieldName": "Receipt Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1c62e7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.TotalValue",
+          "FieldName": "Total Value",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#adae42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ],
+          "RuleSet": null
+        },
+        {
+          "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.SalesOrder_Items",
+          "FieldName": "SalesOrder_Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.SalesOrder_Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.SalesOrder_Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.SalesOrder_Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            },
+            {
+              "FieldId": "AlfagommaGroup.ZAR.SalesOrder_ZAR.SalesOrder_Items.TotalAmount",
+              "FieldName": "Total Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [],
+              "RuleSet": null
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ],
+          "RuleSet": null
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.CHN.Invoice_CHN",
+      "Group": "Alfagomma Group",
+      "Category": "CHN",
+      "Name": "Invoice_CHN",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.CHN.Invoice_CHN.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.CHN.SalesOrder_CHN",
+      "Group": "Alfagomma Group",
+      "Category": "CHN",
+      "Name": "SalesOrder_CHN",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.CHN.SalesOrder_CHN.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.KOR.Invoice_KOR",
+      "Group": "Alfagomma Group",
+      "Category": "KOR",
+      "Name": "Invoice_KOR",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.KOR.Invoice_KOR.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.KOR.SalesOrderPO_KOR",
+      "Group": "Alfagomma Group",
+      "Category": "KOR",
+      "Name": "SalesOrder_KOR",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.KOR.SalesOrderPO_KOR.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "AlfagommaGroup.ExceptionDocs.Exception",
+      "Group": "Alfagomma Group",
+      "Category": "ExceptionDocs",
+      "Name": "Exception",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "AlfagommaGroup.ExceptionDocs.Exception.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    }
+  ],
+  "Groups": [
+    {
+      "Name": "Alfagomma Group",
+      "Categories": [
+        "AUS",
+        "IND",
+        "MYS",
+        "SGP",
+        "THA",
+        "ZAR",
+        "CHN",
+        "KOR",
+        "ExceptionDocs"
+      ]
+    }
+  ],
+  "SupportedLanguages": [
+    {
+      "Name": "Undetermined Language",
+      "Code": "und"
+    },
+    {
+      "Name": "Bulgarian",
+      "Code": "bul"
+    },
+    {
+      "Name": "Cantonese",
+      "Code": "yue"
+    },
+    {
+      "Name": "Danish",
+      "Code": "dan"
+    },
+    {
+      "Name": "Dutch",
+      "Code": "nld"
+    },
+    {
+      "Name": "English",
+      "Code": "eng"
+    },
+    {
+      "Name": "French",
+      "Code": "fra"
+    },
+    {
+      "Name": "Georgian",
+      "Code": "kat"
+    },
+    {
+      "Name": "German",
+      "Code": "deu"
+    },
+    {
+      "Name": "Greek",
+      "Code": "ell"
+    },
+    {
+      "Name": "Hebrew",
+      "Code": "heb"
+    },
+    {
+      "Name": "Hindi",
+      "Code": "hin"
+    },
+    {
+      "Name": "Italian",
+      "Code": "ita"
+    },
+    {
+      "Name": "Japanese",
+      "Code": "jpn"
+    },
+    {
+      "Name": "Korean",
+      "Code": "kor"
+    },
+    {
+      "Name": "Macedonian",
+      "Code": "mkd"
+    },
+    {
+      "Name": "Mandarin",
+      "Code": "zho"
+    },
+    {
+      "Name": "Marathi",
+      "Code": "mar"
+    },
+    {
+      "Name": "Norwegian",
+      "Code": "nor"
+    },
+    {
+      "Name": "Polish",
+      "Code": "pol"
+    },
+    {
+      "Name": "Portuguese",
+      "Code": "por"
+    },
+    {
+      "Name": "Romanian",
+      "Code": "ron"
+    },
+    {
+      "Name": "Russian",
+      "Code": "rus"
+    },
+    {
+      "Name": "Serbian",
+      "Code": "srp"
+    },
+    {
+      "Name": "Spanish",
+      "Code": "spa"
+    },
+    {
+      "Name": "Swedish",
+      "Code": "swe"
+    },
+    {
+      "Name": "Telugu",
+      "Code": "tel"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+ "email" : "andreas.kurz@alfagomma.com",
+ "copy" : [ ]
+}

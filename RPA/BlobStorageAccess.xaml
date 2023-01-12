@@ -1,0 +1,417 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BlobStorageAccess" this:BlobStorageAccess.in_AppClientID="93a2e978-06ae-480c-ba21-e34ae1a07663" this:BlobStorageAccess.in_ContainerName="salesorders" this:BlobStorageAccess.in_ContentType="application/pdf" this:BlobStorageAccess.in_ResourceGroupName="AGP-DEV-RG" this:BlobStorageAccess.in_secureClientSecret="[New System.Net.NetworkCredential(&quot;&quot;, &quot;MdZ8Q~KZqg6rWlMpvBVNRBEkudoYiRqKfzmFhaxc&quot;).SecurePassword]" this:BlobStorageAccess.in_SecureStorageAccountKey="[New System.Net.NetworkCredential(&quot;&quot;,&quot;t/n91eZ8EADKnM3X6c/V5VrZbX5ssWFQJudsayaplilWBQ21GFrH1vQ0fRfPDPYJsVobu72lJS0P+AStJHaWqw==&quot;).SecurePassword]" this:BlobStorageAccess.in_StorageAccountName="docautomation" this:BlobStorageAccess.in_SubscriptionID="d7bd46cb-71a6-4a63-a736-3de9b745575d" this:BlobStorageAccess.in_TenantID="6e050b91-7493-4949-8609-6e0320e7b59e" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uaa="clr-namespace:UiPath.Azure.Activities;assembly=UiPath.Azure.Activities" xmlns:uac="clr-namespace:UiPath.Azure.Core;assembly=UiPath.Azure" xmlns:uam="clr-namespace:UiPath.Azure.Models;assembly=UiPath.Azure" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_AppClientID" Type="InArgument(x:String)" />
+    <x:Property Name="in_BlobName" Type="InArgument(x:String)" />
+    <x:Property Name="in_ContainerName" Type="InArgument(x:String)" />
+    <x:Property Name="in_ContentType" Type="InArgument(x:String)" />
+    <x:Property Name="in_FilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_ResourceGroupName" Type="InArgument(x:String)" />
+    <x:Property Name="in_secureClientSecret" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_SecureStorageAccountKey" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_StorageAccountName" Type="InArgument(x:String)" />
+    <x:Property Name="in_SubscriptionID" Type="InArgument(x:String)" />
+    <x:Property Name="in_TenantID" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1152,3408</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>BlobStorageAccess_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Azure.Core</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Azure.Activities</x:String>
+      <x:String>UiPath.Azure.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="53">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Azure</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Azure.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.AzureActiveDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BlobStorageAccess" sap:VirtualizedContainerService.HintSize="680,3343" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="uam:StorageAccount" Name="storageAccount" />
+      <Variable x:TypeArguments="ss:SecureString" Name="storageAccountKey" />
+      <Variable x:TypeArguments="uam:BlobContainer" Name="blobContainers" />
+      <Variable x:TypeArguments="uam:Blob" Name="createdBlob" />
+      <Variable x:TypeArguments="uam:Blob[]" Name="blobList" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uaa:AzureScope ClientId="[in_AppClientID]" ClientSecret="[in_secureClientSecret]" DisplayName="Azure Scope" EnvironmentType="Global" sap:VirtualizedContainerService.HintSize="758,6124" sap2010:WorkflowViewState.IdRef="AzureScope_1" SubscriptionId="[in_SubscriptionID]" TenantId="[in_TenantID]">
+      <uaa:AzureScope.Body>
+        <ActivityAction x:TypeArguments="uac:AzureCmd">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="uac:AzureCmd" Name="AzureScopePropertyTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="680,5811" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="index" />
+              <Variable x:TypeArguments="uam:BlobContainer[]" Name="getBlobInContainerList" />
+              <Variable x:TypeArguments="uam:BlobContainer" Name="getBlobContainerList" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uaa:AzureGetStorageAccount DisplayName="Get Storage Account" sap:VirtualizedContainerService.HintSize="618,168" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccount_2" ResourceGroupName="[in_ResourceGroupName]" StorageAccount="[storageAccount]" StorageAccountName="[in_StorageAccountName]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureGetStorageAccount>
+            <uaa:AzureGetStorageAccountKey DisplayName="Get Storage Account Key" sap:VirtualizedContainerService.HintSize="618,168" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccountKey_2" KeyNumber="[UiPath.Core.KeyNumber.Key1]" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureGetStorageAccountKey>
+            <uaa:AzureGetBlobContainer ResourceGroupName="{x:Null}" StorageAccountName="{x:Null}" BlobContainer="[getBlobContainerList]" ContainerName="invoices" DisplayName="Get Blob Container" sap:VirtualizedContainerService.HintSize="618,52" sap2010:WorkflowViewState.IdRef="AzureGetBlobContainer_4" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureGetBlobContainer>
+            <uaa:AzureGetBlobList MaximumItems="{x:Null}" NameStartsWith="{x:Null}" BlobContainer="[getBlobContainerList]" BlobList="[blobList]" DisplayName="Get Blob List" sap:VirtualizedContainerService.HintSize="618,52" sap2010:WorkflowViewState.IdRef="AzureGetBlobList_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureGetBlobList>
+            <uaa:AzureForEachBlobContainer CurrentIndex="{x:Null}" ResourceGroupName="{x:Null}" StorageAccountName="{x:Null}" DisplayName="For Each Blob Container" sap:VirtualizedContainerService.HintSize="618,2345" sap2010:WorkflowViewState.IdRef="AzureForEachBlobContainer_2" NameStartsWith="sales" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]">
+              <uaa:AzureForEachBlobContainer.Body>
+                <ActivityAction x:TypeArguments="uam:BlobContainer">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="uam:BlobContainer" Name="Container" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1497" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="uam:Blob" Name="outBlob" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[Container.Name]" />
+                    <uaa:AzureGetBlobContainer BlobContainer="[blobContainers]" ContainerName="[Container.Name]" DisplayName="Get Blob Container" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="AzureGetBlobContainer_6" ResourceGroupName="[in_ResourceGroupName]" StorageAccount="[storageAccount]" StorageAccountKey="[in_SecureStorageAccountKey]" StorageAccountName="[in_StorageAccountName]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uaa:AzureGetBlobContainer>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,579" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uaa:AzureCreateBlobContainer BlobContainer="{x:Null}" Metadata="{x:Null}" ResourceGroupName="{x:Null}" StorageAccountName="{x:Null}" ContainerName="row" DisplayName="Create Blob Container" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="AzureCreateBlobContainer_2" PublicAccessLevel="None" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uaa:AzureCreateBlobContainer>
+                          <uaa:AzureGetBlob Blob="[outBlob]" BlobContainer="[blobContainers]" BlobName="row" DisplayName="Get Blob" sap:VirtualizedContainerService.HintSize="338,168" sap2010:WorkflowViewState.IdRef="AzureGetBlob_3" />
+                          <uaa:AzureAppendToBlob FileResourceToUpload="{x:Null}" Timeout="{x:Null}" AppendBlob="[outBlob]" DisplayName="Append to Blob" FileToUpload="C:\Users\VijaySingh\Documents\UiPath\DocumentUnderstandingProcess ALFAGOMMA\alfagomma\salesorders\training_AUS_4AHP029859.pdf" sap:VirtualizedContainerService.HintSize="338,168" sap2010:WorkflowViewState.IdRef="AzureAppendToBlob_2" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <uaa:AzureUploadBlobFromFile Blob="{x:Null}" BlobAccessTier="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Timeout="{x:Null}" BlobContainer="[blobContainers]" ContentType="[in_ContentType]" DisplayName="Upload Blob from File" FileToUpload="C:\Users\VijaySingh\Documents\UiPath\DocumentUnderstandingProcess ALFAGOMMA\alfagomma\salesorders\training_AUS_4AHP029859.pdf" sap:VirtualizedContainerService.HintSize="478,671" sap2010:WorkflowViewState.IdRef="AzureUploadBlobFromFile_3" Name="row/AUS/inv" Type="[UiPath.Core.AzureBlobType.Block]" UploadVhdFileAsPageBlob="True">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uaa:AzureUploadBlobFromFile>
+                    <uaa:AzureForEachBlob CurrentIndex="{x:Null}" NameStartsWith="{x:Null}" BlobContainer="[blobContainers]" DisplayName="For Each Blob in Container" sap:VirtualizedContainerService.HintSize="478,361" sap2010:WorkflowViewState.IdRef="AzureForEachBlob_5">
+                      <uaa:AzureForEachBlob.Body>
+                        <ActivityAction x:TypeArguments="uam:Blob">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="uam:Blob" Name="Blob" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,201" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="uam:Blob" Name="outBlob" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[Container.Name]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uaa:AzureForEachBlob.Body>
+                      <uaa:AzureForEachBlob.NumberOfBlobsPerSegment>
+                        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="25" />
+                        </InArgument>
+                      </uaa:AzureForEachBlob.NumberOfBlobsPerSegment>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uaa:AzureForEachBlob>
+                  </Sequence>
+                </ActivityAction>
+              </uaa:AzureForEachBlobContainer.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureForEachBlobContainer>
+            <uaa:AzureGetBlobContainerList NameStartsWith="{x:Null}" BlobContainerList="[getBlobInContainerList]" DisplayName="Get Blob Containers List" sap:VirtualizedContainerService.HintSize="618,467" sap2010:WorkflowViewState.IdRef="AzureGetBlobContainerList_3" MaximumItems="[20]" ResourceGroupName="[in_ResourceGroupName]" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]" StorageAccountName="[in_StorageAccountName]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureGetBlobContainerList>
+            <uaa:AzureCreateBlobContainer BlobContainer="{x:Null}" Metadata="{x:Null}" ResourceGroupName="{x:Null}" StorageAccountName="{x:Null}" ContainerName="invoices\row" DisplayName="Create Blob Container" sap:VirtualizedContainerService.HintSize="618,518" sap2010:WorkflowViewState.IdRef="AzureCreateBlobContainer_1" PublicAccessLevel="[UiPath.Core.ContainerPublicAccessLevel.Public]" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureCreateBlobContainer>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="618,307" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,228" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uaa:AzureGetBlobList MaximumItems="{x:Null}" NameStartsWith="{x:Null}" BlobContainer="[blobContainers]" BlobList="[blobList]" DisplayName="Get Blob List" sap:VirtualizedContainerService.HintSize="338,117" sap2010:WorkflowViewState.IdRef="AzureGetBlobList_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uaa:AzureGetBlobList>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,511" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,432" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uaa:AzureUploadBlobFromFile BlobAccessTier="{x:Null}" ContentType="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Timeout="{x:Null}" Blob="[createdBlob]" BlobContainer="[blobContainers]" DisplayName="Upload Blob from File" FileToUpload="[in_FilePath]" sap:VirtualizedContainerService.HintSize="338,321" sap2010:WorkflowViewState.IdRef="AzureUploadBlobFromFile_2" Name="[in_BlobName]" Type="Block" UploadVhdFileAsPageBlob="True">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uaa:AzureUploadBlobFromFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uaa:AzureForEachBlobContainer CurrentIndex="[index]" DisplayName="For Each Blob Container" sap:VirtualizedContainerService.HintSize="478,660" sap2010:WorkflowViewState.IdRef="AzureForEachBlobContainer_1" NameStartsWith="s" ResourceGroupName="[in_ResourceGroupName]" StorageAccount="[storageAccount]" StorageAccountKey="[storageAccountKey]" StorageAccountName="[in_StorageAccountName]">
+              <uaa:AzureForEachBlobContainer.Body>
+                <ActivityAction x:TypeArguments="uam:BlobContainer">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="uam:BlobContainer" Name="Container" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,201" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[index.ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </uaa:AzureForEachBlobContainer.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureForEachBlobContainer>
+            <uaa:AzureForEachBlob CurrentIndex="{x:Null}" NameStartsWith="{x:Null}" BlobContainer="[blobContainers]" DisplayName="For Each Blob in Container" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="AzureForEachBlob_4">
+              <uaa:AzureForEachBlob.Body>
+                <ActivityAction x:TypeArguments="uam:Blob">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="uam:Blob" Name="Blob" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,409" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="out_FilePath" />
+                      <Variable x:TypeArguments="upr:ILocalResource" Name="out_File" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Blob.Name]" />
+                    <uaa:AzureDownloadBlobToFile Timeout="{x:Null}" Blob="[Blob]" DisplayName="Download Blob to File" File="[out_File]" FileName="[Blob.Name]" FilePath="[out_FilePath]" Folder="[&quot;alfagomma\&quot;+in_ContainerName]" sap:VirtualizedContainerService.HintSize="338,168" sap2010:WorkflowViewState.IdRef="AzureDownloadBlobToFile_1" Overwrite="True">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uaa:AzureDownloadBlobToFile>
+                  </Sequence>
+                </ActivityAction>
+              </uaa:AzureForEachBlob.Body>
+              <uaa:AzureForEachBlob.NumberOfBlobsPerSegment>
+                <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                  <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="25" />
+                </InArgument>
+              </uaa:AzureForEachBlob.NumberOfBlobsPerSegment>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uaa:AzureForEachBlob>
+          </Sequence>
+        </ActivityAction>
+      </uaa:AzureScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uaa:AzureScope>
+  </Sequence>
+</Activity>
